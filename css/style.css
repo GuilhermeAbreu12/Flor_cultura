@@ -25,8 +25,8 @@ body {
 header {
     padding: 4vh 0;
     text-align: center;
-    color: white;
     font-family: sans-serif;
+    color: white;
     background: linear-gradient(to right, var(--verde1), var(--verde2));
 }
 /* Fim - header */
@@ -77,12 +77,18 @@ main {
 }
 
 /* Início - aside */
+#menu-lateral-box {
+    position: absolute;
+    display: flex;
+}
 aside#menu-lateral {
-    height: 77.6vh;
-    width: 15%;
+    min-height: 77.6vh;
+    width: 15vw;
     min-width: 140px;
     display: none;
     flex-direction: column;
+    border-radius: 0 0 10px;
+    opacity: 90%;
     background-color: var(--verde2);
 }
 aside#menu-lateral > ul {
@@ -110,6 +116,9 @@ aside#menu-lateral > ul > li {
 }
 .menu-lateral__item:hover , .menu-lateral__item:focus {
     background: linear-gradient(to bottom, var(--verde1), green);
+}
+#menu-lateral__item__last {
+    border-radius: 0 0 10px;
 }
 /* Fim - aside */
 /* Fim - main */

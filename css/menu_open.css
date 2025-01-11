@@ -1,6 +1,7 @@
 #button-menu--open {
     height: 4vh;
     min-height: 30px;
+    width: 4vh;
     min-width: 30px;
     display: none;
     align-items: center;

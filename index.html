@@ -34,40 +34,29 @@
             </svg>
         </button>
         <!-- Menu Lista -->
-        <aside id="menu-lateral">
-            <ul>
-                <li><a href="#" class="menu-lateral__item">Agapantos</a></li>
-                <li><a href="#" class="menu-lateral__item">Girassóis</a></li>
-                <li><a href="#" class="menu-lateral__item">Margaridas</a></li>
-                <li><a href="#" class="menu-lateral__item">Tulipas</a></li>
-                <li><a href="#" class="menu-lateral__item">Orquídeas</a></li>
-                <li><a href="#" class="menu-lateral__item">Lírios</a></li>
-                <li><a href="#" class="menu-lateral__item">Bromélias</a></li>
-                <li><a href="#" class="menu-lateral__item">Íxoras</a></li>
-                <li><a href="#" class="menu-lateral__item">Allamandas</a></li>
-                <li><a href="#" class="menu-lateral__item">Dálias</a></li>
-                <li><a href="#" class="menu-lateral__item">Gérberas</a></li>
-            </ul>
+        <aside id="menu-lateral-box">
+            <aside id="menu-lateral">
+                <ul>
+                    <li><a href="#" class="menu-lateral__item">Agapantos</a></li>
+                    <li><a href="#" class="menu-lateral__item">Girassóis</a></li>
+                    <li><a href="#" class="menu-lateral__item">Margaridas</a></li>
+                    <li><a href="#" class="menu-lateral__item">Tulipas</a></li>
+                    <li><a href="#" class="menu-lateral__item">Orquídeas</a></li>
+                    <li><a href="#" class="menu-lateral__item">Lírios</a></li>
+                    <li><a href="#" class="menu-lateral__item">Bromélias</a></li>
+                    <li><a href="#" class="menu-lateral__item">Íxoras</a></li>
+                    <li><a href="#" class="menu-lateral__item">Allamandas</a></li>
+                    <li><a href="#" class="menu-lateral__item">Dálias</a></li>
+                    <li><a href="#" class="menu-lateral__item" id="menu-lateral__item__last">Gérberas</a></li>
+                </ul>    
+            </aside>
+            <button id="button-menu--open" tabindex="0">
+                <div class="button-menu--open__line" id="button-menu--open__line1"></div>
+                <div class="button-menu--open__line" id="button-menu--open__line2"></div>
+            </button>
         </aside>
-        <button id="button-menu--open" tabindex="0">
-            <div class="button-menu--open__line" id="button-menu--open__line1"></div>
-            <div class="button-menu--open__line" id="button-menu--open__line2"></div>
-        </button>
         <div id="main__product-box">
-            <div class="products">
-                <div class="products__img">
-                    <img src="imgs/product1.jpg" alt="foto do buquê de rosas">
-                </div>
-                <div class="products__title">
-                    <p>Buquê de rosas com 30 unidades</p>
-                </div>
-                <div class="products__price">
-                    <h5>R$ 450,00</h5>
-                </div>
-            </div>
-            <div class="products">2</div>
-            <div class="products">3</div>
-            <div class="products">4</div>
+            
         </div>
     </main>
     <footer>
@@ -90,6 +79,7 @@
             </a>
         </div>
     </footer>
-    <script src="menu.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </body>
 </html>
