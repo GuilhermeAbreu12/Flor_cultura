@@ -1,0 +1,46 @@
+#button-menu {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 20dvh;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+#button-menu:focus {
+    outline: 1px solid black;
+}
+#button-menu:hover {
+    background-color: var(--verde1);
+    && #Outlined > * {
+        stroke: white;
+    }
+}
+#button-menu__icon {
+    height: 30px;
+    width: 30px;
+}
+#Outlined > *{
+    stroke: black;
+    stroke-width: 2.5;
+}
+
+/* Responsividade */
+@media (max-width: 629px){   
+}
+@media (max-height: 489px){
+    #button-menu {
+        top: 100px;
+    }
+}
+@media (max-width: 500px){
+    #button-menu {
+        height: 40px;
+        width: 40px;
+        margin: 1% 2%;
+    }
+}

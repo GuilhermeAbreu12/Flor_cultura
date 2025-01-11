@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media (max-width: 629px){
+    nav > ul{
+        width: 64%;
+    }   
+}
+@media (max-width: 572px){
+    
+}
+@media (max-width: 372px){
+    nav > ul{
+        width: 70%;
+    }
+}
+@media (max-width: 344px){
+    nav > ul{
+        width: 100%;
+    }
+    #word-break {
+        display: block;
+    }
+}
