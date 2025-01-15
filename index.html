@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="imgs/beija-flor.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/searchbar.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/menu_open.css">
     <link rel="stylesheet" href="css/responsivo.css">
@@ -22,6 +23,30 @@
             <li><a href="#" class="nav-item">Sobre nós</a></li>
         </ul>
     </nav>
+    <section id="searchbar-box">
+        <input type="text" id="searchbar" autocomplete="off" placeholder="Pesquise uma flor aqui...">
+    </section>
+    <aside id="menu-lateral-box">
+        <aside id="menu-lateral">
+            <ul>
+                <li><a href="#" class="menu-lateral__item">Agapantos</a></li>
+                <li><a href="#" class="menu-lateral__item">Girassóis</a></li>
+                <li><a href="#" class="menu-lateral__item">Margaridas</a></li>
+                <li><a href="#" class="menu-lateral__item">Tulipas</a></li>
+                <li><a href="#" class="menu-lateral__item">Orquídeas</a></li>
+                <li><a href="#" class="menu-lateral__item">Lírios</a></li>
+                <li><a href="#" class="menu-lateral__item">Bromélias</a></li>
+                <li><a href="#" class="menu-lateral__item">Íxoras</a></li>
+                <li><a href="#" class="menu-lateral__item">Allamandas</a></li>
+                <li><a href="#" class="menu-lateral__item">Dálias</a></li>
+                <li><a href="#" class="menu-lateral__item" id="menu-lateral__item__last">Gérberas</a></li>
+            </ul>    
+        </aside>
+        <button id="button-menu--open" tabindex="0">
+            <div class="button-menu--open__line" id="button-menu--open__line1"></div>
+            <div class="button-menu--open__line" id="button-menu--open__line2"></div>
+        </button>
+    </aside>
     <main>
         <!-- Menu Botao -->    
         <button id="button-menu" tabindex="0">
@@ -34,29 +59,9 @@
             </svg>
         </button>
         <!-- Menu Lista -->
-        <aside id="menu-lateral-box">
-            <aside id="menu-lateral">
-                <ul>
-                    <li><a href="#" class="menu-lateral__item">Agapantos</a></li>
-                    <li><a href="#" class="menu-lateral__item">Girassóis</a></li>
-                    <li><a href="#" class="menu-lateral__item">Margaridas</a></li>
-                    <li><a href="#" class="menu-lateral__item">Tulipas</a></li>
-                    <li><a href="#" class="menu-lateral__item">Orquídeas</a></li>
-                    <li><a href="#" class="menu-lateral__item">Lírios</a></li>
-                    <li><a href="#" class="menu-lateral__item">Bromélias</a></li>
-                    <li><a href="#" class="menu-lateral__item">Íxoras</a></li>
-                    <li><a href="#" class="menu-lateral__item">Allamandas</a></li>
-                    <li><a href="#" class="menu-lateral__item">Dálias</a></li>
-                    <li><a href="#" class="menu-lateral__item" id="menu-lateral__item__last">Gérberas</a></li>
-                </ul>    
-            </aside>
-            <button id="button-menu--open" tabindex="0">
-                <div class="button-menu--open__line" id="button-menu--open__line1"></div>
-                <div class="button-menu--open__line" id="button-menu--open__line2"></div>
-            </button>
-        </aside>
+        
         <div id="main__product-box">
-            
+            Não encontramos mais produtos relacionados
         </div>
     </main>
     <footer>
@@ -79,7 +84,8 @@
             </a>
         </div>
     </footer>
-    <script src="js/products.js" defer></script>
+    <script type="module" src="js/searchbar.js" defer></script>
+    <script type="module" src="js/products.js" defer></script>
     <script src="js/menu.js" defer></script>
 </body>
 </html>

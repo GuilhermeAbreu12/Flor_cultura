@@ -22,3 +22,13 @@
         display: block;
     }
 }
+@media (max-height: 382px){
+    #menu-lateral-box {
+        margin-top: 50px;
+    }
+}
+@media (max-height: 352px){
+    #menu-lateral-box {
+        margin-top: 52px;
+    }
+}
