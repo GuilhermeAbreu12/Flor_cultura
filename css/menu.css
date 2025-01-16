@@ -9,8 +9,9 @@
     align-items: center;
     justify-content: center;
     border: 0;
-    background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/1984280-floral-background-with-cherry-blossoms-in-full-bloom-isolated-on-a-white-background-gratis-vetor.jpg');
+    background-color: white;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgb(216, 150, 7);
 }
 #button-menu:hover, #button-menu:focus{
     outline: 0;

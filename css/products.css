@@ -79,6 +79,8 @@
     display: none;
     align-items: center;
     justify-content: center;
+    font-family: var(--fonte3);
+    text-align: center;
 }
 @media (max-width: 580px){
     .products .products__title {

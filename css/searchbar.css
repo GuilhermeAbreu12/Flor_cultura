@@ -2,18 +2,20 @@
 #searchbar-box {
     height: 40px;
     width: 100%;
-    background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/1984280-floral-background-with-cherry-blossoms-in-full-bloom-isolated-on-a-white-background-gratis-vetor.jpg');
+    background-color: rgb(243, 218, 163);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #searchbar {
-    height: 70%;
-    width: 250px;
+    height: 80%;
+    width: 300px;
     padding: 0 1%;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: rgb(255, 252, 247);
+    border: 2px solid rgb(238, 182, 63);
+    box-shadow: 0 0 10px rgb(231, 167, 29);
+    border-radius: 15px;
+    font-family: var(--fonte3);
 }
 #searchbar:focus {
     outline: 0;

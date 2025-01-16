@@ -75,7 +75,7 @@ main {
     min-height: 77dvh;
     background-color: var(--bg);
     display: flex;
-    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/1984280-floral-background-with-cherry-blossoms-in-full-bloom-isolated-on-a-white-background-gratis-vetor.jpg');
+    background: linear-gradient(to bottom, rgb(243, 218, 163), rgb(248, 186, 51));
     background-position: cover;
 }
 
@@ -92,7 +92,7 @@ aside#menu-lateral {
     min-height: 77.6vh;
     width: 15vw;
     min-width: 140px;
-    display: none;
+    display: flex;
     flex-direction: column;
     border-radius: 0 0 10px;
     opacity: 90%;
@@ -160,18 +160,26 @@ footer p {
     border-radius: 50%;
     background-color: var(--verde2);
 }
-#footer-icons--facebook > *{
+.footer__link-box__link > *{
+    height: 100%;
+}
+#footer-icons--whatsapp > *{
+    height: 75%;
+    stroke-width: 1;
+    stroke: white;
     fill: white;
 }
-#footer-icons--facebook:focus, #footer-icons--facebook:hover{
+#footer-icons--whatsapp:focus, #footer-icons--whatsapp:hover{
     outline: 0;
-    border-color: #0054db;
-    background-color: #0966FF;
+    /* border-color: #0054db;*/
+    border-color: #156900;
+    background: radial-gradient(circle farthest-corner at center, #25b301, #25b601, #156900);
 }
 #footer-icons--linkedIn:focus, #footer-icons--linkedIn:hover {
     outline: 0;
-    border-color: #0270a3;
-    background-color: #028CCA;
+    border-color: #01628f;
+    /*background-color: #028CCA;*/
+    background: radial-gradient(circle farthest-corner at center, #2abbff, #01628f);
 }
 #footer-icons--linkedIn {
     fill: white;
@@ -184,8 +192,8 @@ footer p {
 #footer-icons--github:focus, #footer-icons--github:hover{
     outline: 0;
     border-color: black;
-    background-color: black;
+    background: radial-gradient(circle farthest-corner at center, #636363, #1f1f1f);
 }
-#footer-icons--facebook:focus, #footer-icons--linkedIn:focus, #footer-icons--github:focus{
+#footer-icons--whatsapp:focus, #footer-icons--linkedIn:focus, #footer-icons--github:focus{
     transition: .7s;
 }
