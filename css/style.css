@@ -87,6 +87,8 @@ main {
     top: 11vh;
     margin-top: 10vh;
     margin-top: 48px;
+    opacity: 1;
+    transform: translateX(-100%);
 }
 aside#menu-lateral {
     min-height: 77.6vh;
@@ -95,8 +97,12 @@ aside#menu-lateral {
     display: flex;
     flex-direction: column;
     border-radius: 0 0 10px;
-    opacity: 90%;
     background-color: var(--verde2);
+}
+aside#menu-lateral-box.visible {
+    transform: translateX(0);
+    opacity: 90%;
+    transition: .6s;
 }
 aside#menu-lateral > ul {
     height: 100%;
@@ -124,7 +130,7 @@ aside#menu-lateral > ul > li {
 .menu-lateral__item:hover , .menu-lateral__item:focus {
     background: linear-gradient(to bottom, var(--verde1), green);
 }
-#menu-lateral__item__last {
+.menu-lateral__item__last {
     border-radius: 0 0 10px;
 }
 /* Fim - aside */

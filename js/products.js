@@ -1,68 +1,21 @@
 // Chamando o que eu preciso
 export let main__product_box = document.getElementById('main__product-box') // Caixa central
+// Lista de itens no menu lateral
+const Agapantos = document.getElementById('Agapantos')
+const Girassois = document.getElementById('Girassois')
+const Margaridas = document.getElementById('Margaridas')
+const Tulipas = document.getElementById('Tulipas')
+const Orquideas = document.getElementById('Orquideas')
+const Lírios = document.getElementById('Lirios')
+const Bromelias = document.getElementById('Bromelias')
+const Ixoras = document.getElementById('Ixoras')
+const Allamandas = document.getElementById('Allamandas')
+const Dalias = document.getElementById('Dalias')
+const Gerberas = document.getElementById('Gerberas')
 
-export const Products = [
-    {
-        img: '../imgs/prods/rosa01.webp',
-        title: 'Buquê de rosas com 30 unidades',
-        price: '450,00'
-    },
-    {
-        img: '../imgs/prods/rosa02.webp',
-        title: 'Buquê de rosas com 20 unidades',
-        price: '260,00'
-    },
-    {
-        img: '../imgs/prods/rosa03.webp',
-        title: 'Buquê de rosas com 12 unidades',
-        price: '198,00'
-    },
-    {
-        img: '../imgs/prods/rosa04.webp',
-        title: 'Buquê de rosas Spray',
-        price: '900,00'
-    },
-    {
-        img: '../imgs/prods/rosa05.webp',
-        title: 'Buquê de Rosas Colombianas com 12 unidades',
-        price: '218,00'
-    },
-    {
-        img: '../imgs/prods/rosa06.webp',
-        title: 'Buquê de Rosas Colombianas com 6 unidades',
-        price: '139,00'
-    },
-    {
-        img: '../imgs/prods/rosa07.webp',
-        title: 'Buquê de rosas colombianas com 3 unidades',
-        price: '79,00'
-    },
-    {
-        img: '../imgs/prods/rosa08.webp',
-        title: 'Buquê de rosas colombianas com 20 unidades',
-        price: '370,00'
-    },
-    {
-        img: '../imgs/prods/rosa09.webp',
-        title: 'Ramalhete de Rosas Champagne',
-        price: '99,00'
-    },
-    {
-        img: '../imgs/prods/rosa10.webp',
-        title: 'Ramalhete com 6 Rosas vermelhas',
-        price: '99,00'
-    },
-    {
-        img: '../imgs/prods/rosa11.webp',
-        title: 'Ramalhete de Girassol',
-        price: '58,00'
-    },
-    {
-        img: '../imgs/prods/rosa12.webp',
-        title: 'Ramalhete de Rosas Brancas',
-        price: '98,00'
-    }
-]
+import { Products } from "./dataBase.js";
+import { searchbar } from "./searchbar.js";
+import { filtrar } from "./searchbar.js";
 let content = [];
 export let c = 0;
 // Gerando dinamicamente
@@ -87,4 +40,50 @@ let nothingMore = `
         <p> Não encontramos mais resultados relacionados </p>
     </div>
 `
+// Menu lateral Clicks
+
+Agapantos.addEventListener('click', ()=>{
+    searchbar.value = 'Agapanto'
+    filtrar()
+})
+Girassois.addEventListener('click', ()=>{
+    searchbar.value = 'Girassol'
+    filtrar()
+})
+Margaridas.addEventListener('click', ()=>{
+    searchbar.value = 'Margarida'
+    filtrar()
+})
+Tulipas.addEventListener('click', ()=>{
+    searchbar.value = 'Tulipa'
+    filtrar()
+})
+Orquideas.addEventListener('click', ()=>{
+    searchbar.value = 'Orquídea'
+    filtrar()
+})
+Lírios.addEventListener('click', ()=>{
+    searchbar.value = 'Lírio'
+    filtrar()
+})
+Bromelias.addEventListener('click', ()=>{
+    searchbar.value = 'Bromélia'
+    filtrar()
+})
+Ixoras.addEventListener('click', ()=>{
+    searchbar.value = 'Íxora'
+    filtrar()
+})
+Allamandas.addEventListener('click', ()=>{
+    searchbar.value = 'Allamanda'
+    filtrar()
+})
+Dalias.addEventListener('click', ()=>{
+    searchbar.value = 'Dália'
+    filtrar()
+})
+Gerberas.addEventListener('click', ()=>{
+    searchbar.value = 'Gérbera'
+    filtrar()
+})
 main__product_box.innerHTML = content + nothingMore

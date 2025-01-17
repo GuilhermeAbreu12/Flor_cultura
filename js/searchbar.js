@@ -1,10 +1,9 @@
 // Importando variáveis e constantes
-import { Products } from "./products.js";
+import { Products } from "./dataBase.js";
 import { c } from "./products.js";
-import { main__product_box } from "./products.js";
 
 // Identificando os elementos DOM
-const searchbar = document.getElementById('searchbar')
+export const searchbar = document.getElementById('searchbar')
 let body = document.querySelector('body')
 const products = document.querySelectorAll('.products')
 const nothingMore = document.getElementById('nothingMore')
@@ -12,11 +11,8 @@ const nothingMore = document.getElementById('nothingMore')
 // Declarando variáveis e constantes
 let d = 0
 let user = '3'
-console.log('Retornou')
 
-searchbar.addEventListener('input',()=>{
-    console.log('Alguém está digitando...')
-    searchbar.value = searchbar.value.trimStart()
+export function filtrar(){
     if (searchbar.value != ''){
         products.forEach((product) => {
             product.style.display = 'none'
@@ -36,11 +32,9 @@ searchbar.addEventListener('input',()=>{
         })
         nothingMore.style.display = 'none'
     }
-});
-
-for(d in Products){
-    if (Products[d].title.includes(user)){
-        console.log(Products[d].title)
-    }
-    
 }
+searchbar.addEventListener('input',()=>{
+    console.log('Alguém está digitando...')
+    searchbar.value = searchbar.value.trimStart()
+    filtrar()
+});
