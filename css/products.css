@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #main__product-box {
     height: auto;
     width: 92%;

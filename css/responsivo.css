@@ -6,8 +6,10 @@
     }   
     
 }
-@media (max-width: 572px){
-    
+@media (max-width: 500px){
+    header {
+        background: linear-gradient(to right, var(--rosa4), var(--rosa4));
+    }
 }
 @media (max-width: 372px){
     nav > ul{
@@ -20,6 +22,11 @@
     }
     #word-break {
         display: block;
+    }
+}
+@media (max-width: 103px){
+    body {
+        max-width: 98%;
     }
 }
 @media (max-height: 382px){

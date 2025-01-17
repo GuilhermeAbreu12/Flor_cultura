@@ -3,7 +3,7 @@
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 20dvh;
+    top: 20vh;
     left: 10px;
     display: flex;
     align-items: center;
@@ -32,17 +32,25 @@
 }
 
 /* Responsividade */
-@media (max-width: 629px){   
-}
-@media (max-height: 489px){
-    #button-menu {
-        top: 100px;
-    }
-}
 @media (max-width: 500px){
     #button-menu {
         height: 40px;
         width: 40px;
         margin: 1% 2%;
+    }
+}
+@media (max-width: 442px){  
+    #button-menu {
+        left: 2px;
+    } 
+}
+@media (max-height: 589px){
+    #button-menu {
+        top: 22vh;
+    }
+}
+@media (max-height: 489px){
+    #button-menu {
+        top: 100px;
     }
 }

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#box-about{
+    min-height: 70vh;
+    width: 70vw;
+    padding: 2%;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid black;
+    background-color: white;
+    font-family: var(--fonte3);
+    font-size: 0.9rem;
+}
+#box-about > p {
+    padding: 8px 0;
+}

@@ -28,7 +28,8 @@
 }
 body {
     height: auto;
-    min-width: 290px;
+    min-width: 416px;
+    
     background-color: var(--roxo1);
 }
 /* Inicio - header */
@@ -94,7 +95,6 @@ main {
     display: flex;
     z-index: 1;
     top: 11vh;
-    margin-top: 10vh;
     margin-top: 48px;
     opacity: 1;
     transform: translateX(-100%);
