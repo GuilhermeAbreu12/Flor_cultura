@@ -3,19 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor&Cultura - Página Inicial</title>
-    <link rel="shortcut icon" href="imgs/beija-flor.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="css/searchbar.css">
-    <link rel="stylesheet" href="css/menu.css">
-
-    <link rel="preload" href="css/responsivo.css" as="style" onload='this.rel="stylesheet"'>
-    <link rel="preload" href="css/menu_open.css" as="style" onload='this.rel="stylesheet"'>
-    <noscript>
-        <link rel="stylesheet" href="css/responsivo.css">
-        <link rel="stylesheet" href="css/menu_open.css">
-    </noscript>
+    <title>Flor&Cultura | Contatos</title>
+    <link rel="shortcut icon" href="/imgs/beija-flor.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="/css/contatos.css">
 </head>
 <body>
     <header>
@@ -23,52 +15,28 @@
     </header>
     <nav>
         <ul>
+            <li><a href="/index.html" class="nav-item" tabindex="3">Início</a></li>
             <li><a href="#" class="nav-item" tabindex="3">Espécies</a></li>
-            <li><a href="html/contatos.html" class="nav-item" tabindex="3">Contatos</a></li>
             <li><a href="#" class="nav-item" tabindex="3">Sobre nós</a></li>
         </ul>
     </nav>
-    <section id="searchbar-box">
-        <input type="text" id="searchbar" autocomplete="off" placeholder="Pesquise uma flor aqui..." tabindex="3">
-    </section>
-    <aside id="menu-lateral-box">
-        <aside id="menu-lateral">
-            <ul>
-                <li><a href="#" class="menu-lateral__item" id="Agapantos">Agapantos</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Girassois">Girassóis</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Margaridas">Margaridas</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Tulipas">Tulipas</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Orquideas">Orquídeas</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Lirios">Lírios</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Bromelias">Bromélias</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Ixoras">Íxoras</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Allamandas">Allamandas</a></li>
-                <li><a href="#" class="menu-lateral__item" id="Dalias">Dálias</a></li>
-                <li><a href="#" class="menu-lateral__item menu-lateral__item__last" id="Gerberas">Gérberas</a></li>
-            </ul>    
-        </aside>
-        <button id="button-menu--open" tabindex="0">
-            <div class="button-menu--open__line" id="button-menu--open__line1"></div>
-            <div class="button-menu--open__line" id="button-menu--open__line2"></div>
-        </button>
-    </aside>
     <main>
-        <!-- Menu Botao -->    
-        <button id="button-menu" tabindex="3">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px" id="button-menu__icon">
-                <g id="Outlined">
-                    <line x1="2" y1="12" x2="22" y2="12" />
-                    <line x1="2" y1="6" x2="22" y2="6" />
-                    <line x1="2" y1="18" x2="22" y2="18" />
-                </g>
-            </svg>
-        </button>
-        <!-- Menu -->
-        <!-- Menu Lista -->
-        
-        <div id="main__product-box">
-            Não encontramos mais produtos relacionados
-        </div>
+        <h2 id="contact-title">Entre em contato conosco</h2>
+        <form action="https://formsubmit.co/guilhermesabreu08@gmail.com" method="POST">
+            <div id="form__user-name">
+                <p>Seu nome</p>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+            </div>
+            <div id="form__user-email">
+                <p>Seu e-mail</p>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div id="form__user-message">
+                <p>Sua mensagem</p>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button id="form__button" type="submit">Enviar</button>
+       </form>
     </main>
     <footer>
         <p>Criado e Desenvolvido por <span id="word-break">Guilherme Abreu &copy;</span></p>
@@ -90,8 +58,5 @@
             </a>
         </div>
     </footer>
-    <script type="module" src="js/searchbar.js" defer></script>
-    <script type="module" src="js/products.js" defer></script>
-    <script src="js/menu.js" defer></script>
 </body>
 </html>

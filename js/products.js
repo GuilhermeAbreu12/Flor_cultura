@@ -21,14 +21,14 @@ export let c = 0;
 // Gerando dinamicamente
 for(c in Products){
     content += `
-        <div class="products" tabindex="0">
+        <div class="products" tabindex="3">
             <div class="products__img">
                 <img src="${Products[c].img}" alt=".">
             </div>
             <div class="products__title">
                 <p>${Products[c].title}</p>
             </div>
-            <button class="products__price" tabindex="0">
+            <button class="products__price" tabindex="3">
             <h5>R$ ${Products[c].price}</h5>
             </button>
         </div>
@@ -36,7 +36,7 @@ for(c in Products){
     `
 }
 let nothingMore = `
-    <div id="nothingMore" tabindex="0">
+    <div id="nothingMore">
         <p> Não encontramos mais resultados relacionados </p>
     </div>
 `
