@@ -1,2 +1,4 @@
 V - Mudar o sistema de menu para ficar bonito;
 2- Criar as outras páginas;
+#7C007F
+#5a005c

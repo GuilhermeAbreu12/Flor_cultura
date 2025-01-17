@@ -17,7 +17,7 @@
     outline: 0;
     border: 1px solid black;
     box-shadow: 0 0 2px black;
-    background: var(--verde1);
+    background: var(--roxo1);
     && #Outlined > * {
         stroke: white;
     }

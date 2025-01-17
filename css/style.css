@@ -10,6 +10,14 @@
     --verde1: rgb(2, 175, 2);
     --verde2: rgb(0, 114, 0);
     --verde3: rgb(3, 148, 3);
+    --roxo1: #7C007F;
+    --roxo2: #5a005c;
+    --roxo3: #4b024d;
+    --roxo4: #460047;
+    --rosa1: rgb(207, 140, 150);
+    --rosa2: rgb(197, 135, 173);
+    --rosa3: rgb(175, 29, 168);
+    --rosa4: rgb(177, 14, 169);
     --fonte1: 'Fira sans';
     --fonte2: sans-serif;
     --fonte3: 'Montserrat';
@@ -20,7 +28,7 @@
 body {
     height: auto;
     min-width: 290px;
-    background-color: var(--verde3);
+    background-color: var(--roxo1);
 }
 /* Inicio - header */
 header {
@@ -28,7 +36,7 @@ header {
     text-align: center;
     font-family: sans-serif;
     color: white;
-    background: linear-gradient(to right, var(--verde1), var(--verde2));
+    background: linear-gradient(to right, var(--rosa2), var(--rosa4));
 }
 /* Fim - header */
 /* Inicio - nav */
@@ -36,7 +44,7 @@ nav {
     height: 5vh;
     min-height: 24px;
     width: 100%;
-    background-color: var(--verde1);
+    background-color: var(--roxo2);
     display: flex;
     justify-content: center;
 }
@@ -63,7 +71,7 @@ nav a.nav-item {
     border-radius: 10px;
 }
 nav a.nav-item:hover, nav a.nav-item:focus{
-    background-color: green;
+    background-color: var(--rosa4);
     transition: .6s;
 }
 nav a.nav-item:focus {
@@ -75,7 +83,7 @@ main {
     min-height: 77dvh;
     background-color: var(--bg);
     display: flex;
-    background: linear-gradient(to bottom, rgb(243, 218, 163), rgb(248, 186, 51));
+    background: rgb(243, 218, 163);
     background-position: cover;
 }
 
@@ -97,7 +105,7 @@ aside#menu-lateral {
     display: flex;
     flex-direction: column;
     border-radius: 0 0 10px;
-    background-color: var(--verde2);
+    background-color: var(--roxo2);
 }
 aside#menu-lateral-box.visible {
     transform: translateX(0);
@@ -128,7 +136,7 @@ aside#menu-lateral > ul > li {
     outline: 0;
 }
 .menu-lateral__item:hover , .menu-lateral__item:focus {
-    background: linear-gradient(to bottom, var(--verde1), green);
+    background: linear-gradient(to bottom, var(--rosa4), purple);
 }
 .menu-lateral__item__last {
     border-radius: 0 0 10px;
@@ -141,7 +149,7 @@ footer {
     width: 100%;
     padding: 0.4vh 0;
     color: white;
-    background-color: var(--verde3);
+    background-color: var(--roxo2);
     text-align: center;
     font-family: var(--fonte1);
 }
@@ -164,7 +172,7 @@ footer p {
     justify-content: center;
     border: 2px solid black;
     border-radius: 50%;
-    background-color: var(--verde2);
+    background-color: var(--roxo1);
 }
 .footer__link-box__link > *{
     height: 100%;

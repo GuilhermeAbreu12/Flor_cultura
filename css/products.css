@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 #main__product-box {
     height: auto;
     width: 92%;
@@ -24,7 +25,7 @@
     font-family: var(--fonte1);
 }
 .products:focus {
-    box-shadow: 0 0 20px green;
+    box-shadow: 0 0 20px rebeccapurple;
     outline: 0;
     transition: .6s;
 }
@@ -59,18 +60,18 @@
     min-height: 20px;
     padding: 4%;
     color: white;
-    border: 2px solid darkgreen;
-    background:linear-gradient(to bottom, var(--verde2), var(--verde3));
+    border: 2px solid var(--roxo2);
+    background:linear-gradient(to bottom, var(--rosa4), var(--roxo2));
     font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .products .products__price:hover, .products .products__price:focus{
-    border-color: green;
-    background: linear-gradient(to bottom, green, var(--verde1));
+    border-color: purple;
+    background: linear-gradient(to bottom, var(--rosa3), var(--roxo1));
     transition: .6s;
-    box-shadow: 0 0 15px var(--verde1);
+    box-shadow: 0 0 15px var(--roxo4);
     outline: 0;
 }
 #nothingMore {
