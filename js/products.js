@@ -23,7 +23,7 @@ for(c in Products){
     content += `
         <div class="products" tabindex="3">
             <div class="products__img">
-                <img src="${Products[c].img}" alt=".">
+                <img src="${Products[c].img}" alt="imagem da flor ${Products[c].title}">
             </div>
             <div class="products__title">
                 <p>${Products[c].title}</p>
