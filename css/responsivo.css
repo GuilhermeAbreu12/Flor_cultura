@@ -10,6 +10,25 @@
     header {
         background: linear-gradient(to right, var(--rosa4), var(--rosa4));
     }
+    :root{
+        --shoppingCartSpace: 60px;
+    }
+    #buyIcon{
+        height: 75%;
+        
+        justify-content: left;
+    }
+    #buyBar {
+        
+        display: flex;
+    }
+    nav > ul > li {
+        flex: none;
+        padding: 0 5px;
+    }
+    nav > ul {
+        justify-content: center;
+    }
 }
 @media (max-width: 372px){
     nav > ul{
@@ -17,9 +36,9 @@
     }
 }
 @media (max-width: 344px){
-    nav > ul{
+    /*nav > ul{
         width: 100%;
-    }
+    }*/
     #word-break {
         display: block;
     }

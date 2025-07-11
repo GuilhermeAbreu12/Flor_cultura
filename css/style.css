@@ -25,11 +25,10 @@
     --fonte5: 'Teko';
     --fonte6: 'Quicksand';
     --bg: rgb(182, 236, 166);
+    --shoppingCartSpace: 65px;
 }
 body {
     height: auto;
-    min-width: 416px;
-    
     background-color: var(--roxo1);
 }
 /* Inicio - header */
@@ -42,6 +41,9 @@ header {
 }
 /* Fim - header */
 /* Inicio - nav */
+#navSpace {
+    width: var(--shoppingCartSpace);
+}
 nav {
     height: 5vh;
     min-height: 24px;
@@ -79,6 +81,31 @@ nav a.nav-item:hover, nav a.nav-item:focus{
 nav a.nav-item:focus {
     outline: 0;
 }
+#buyBar {
+    height: 100%;
+    width: var(--shoppingCartSpace);
+    display: flex;
+    justify-self: left;
+    justify-content: start;
+    align-items: flex-end;
+}
+#buyIcon {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+#buyIcon svg {
+    height: 100%;
+    max-width: 100%;
+    stroke: white;
+}
+#buyNumber {
+    display: flex;
+    align-items: end;
+}
+#buyNumber__Number{
+    color: white;
+}
 /* Fim - nav */
 /* Início - main */
 main {
@@ -95,7 +122,7 @@ main {
     display: flex;
     z-index: 1;
     top: 11vh;
-    margin-top: 48px;
+    margin-top: 52px;
     opacity: 1;
     transform: translateX(-100%);
 }
