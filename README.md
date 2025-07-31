@@ -54,3 +54,11 @@ O projeto foi desenvolvido para colocar em prática meus conhecimentos em:
 ➡️ [https://floreculturas.netlify.app](https://floreculturas.netlify.app)
 
 ---
+
+## 🤳🏻 Screenshots
+<img width="1360" height="768" alt="Tela inicial adicionando dois produtos diferentes com quantidades diferentes (5 e 2 respectivamente) ao carrinho de compras" src="https://github.com/user-attachments/assets/3acfcbd7-f6a5-4a74-b625-c7216e9c73f8" />
+<img width="1360" height="768" alt="Tela inicial filtrando apenas os produtos com a letra 'G'" src="https://github.com/user-attachments/assets/16eba10b-65c9-4259-adf5-068bab76402e" />
+<img width="1360" height="768" alt="Tela inicial com menu lateral aberto, com a opção 'orquídeas' selecionada" src="https://github.com/user-attachments/assets/1e06e543-6999-432b-92d4-4a557b6325e4" />
+<img width="1360" height="768" alt="Tela inicial" src="https://github.com/user-attachments/assets/816a083b-50b6-4923-9f56-9639c1d60623" />
+
+
